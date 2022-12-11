@@ -1,0 +1,66 @@
+.brand_header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // height:75px;
+    padding: 1.2rem;
+    background-color: #008286;
+    &_links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        font-family: "Poppins",sans-serif;
+        color: white;
+        &_items{
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+.mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width:780px){
+    .mobile-menu{
+        display: block;
+        position: absolute;
+        font-size: 20px;
+        color: white;
+        background-color: #008288;
+        
+        right: 10px;
+
+    }
+    .brand_header_links{
+        display: none;
+    }
+    .brand_header_links_mobile{
+        display: none;
+        position: absolute;
+        background-color: #008286;
+        left: 0;
+        top: 31px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        // margin-left: 50%;
+    }
+    .brand_header_links_items{
+        color: white;
+        text-align: center;
+        padding: 20px;
+        display: block;
+        
+        width: 100%;
+        transition: all 0.5s ease;
+
+    }
+}
+
+
+
+
+a{
+    text-decoration: none;
+}
