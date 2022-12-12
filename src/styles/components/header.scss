@@ -1,66 +1,93 @@
-.brand_header{
+.brand_header {
     display: flex;
+    //   justify-content: space-around;
     justify-content: space-around;
     align-items: center;
     // height:75px;
     padding: 1.2rem;
-    background-color: #008286;
-    &_links{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 50%;
-        font-family: "Poppins",sans-serif;
+    background-color: #0c85f7;
+    &_links {
+      display: flex;
+      justify-content: space-around;
+  
+      align-items: center;
+      width: 50%;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      &_items {
         color: white;
-        &_items{
-            color: white;
-            cursor: pointer;
-        }
+        cursor: pointer;
+      }
     }
-}
-.mobile-menu{
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    left: 25px;
+    color: #fafafa;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  .mobile-menu {
     display: none;
-}
-
-@media screen and (max-width:780px){
-    .mobile-menu{
-        display: block;
-        position: absolute;
-        font-size: 20px;
-        color: white;
-        background-color: #008288;
-        
-        right: 10px;
-
+  }
+  
+  @media screen and (max-width: 780px) {
+    .mobile-menu {
+      display: block;
+      position: absolute;
+      font-size: 20px;
+      color: white;
+      background-color: #0c85f7;
+      right: 10px;
+      outline: none;
+      border: 2px solid white;
+      cursor: pointer;
     }
-    .brand_header_links{
-        display: none;
+  
+    .brand_header {
+      padding: 1rem;
     }
-    .brand_header_links_mobile{
-        display: none;
-        position: absolute;
-        background-color: #008286;
-        left: 0;
-        top: 31px;
-        transition: all 0.5s ease-out;
-        width: 100%;
-        // margin-left: 50%;
+    .logo {
+      display: flex;
+      // flex-direction: column;
+      justify-content: flex-start;
+      left: 5px;
+      color: #fafafa;
+      font-weight: bold;
+      font-family: "Poppins", sans-serif;
     }
-    .brand_header_links_items{
-        color: white;
-        text-align: center;
-        padding: 20px;
-        display: block;
-        
-        width: 100%;
-        transition: all 0.5s ease;
-
+  
+    .brand_header_links {
+      display: none;
     }
-}
-
-
-
-
-a{
+    .brand_header_links_mobile {
+      display: block;
+      position: absolute;
+      background-color: #0c85f7;
+      left: 0;
+      top: 4rem;
+      transition: all 0.5s ease-out;
+      width: 25%;
+      height: 100vh;
+      margin-left: 75%;
+      text-transform: uppercase;
+      :hover {
+        color: orange;
+      }
+    }
+    .brand_header_links_items {
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      transition: all 0.5s ease;
+    }
+  }
+  
+  a {
     text-decoration: none;
-}
+  }
+  
